@@ -13,7 +13,7 @@ func dog(w http.ResponseWriter, req *http.Request) {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	err = tpl.ExecuteTemplate(w, "dog.gohtml","dog")
+	err = tpl.ExecuteTemplate(w, "dog.gohtml", "dog")
 	if err != nil {
 		log.Fatalln(err)
 	}
